@@ -1,0 +1,101 @@
+/*
+Theme Name: Adarna House digital team
+Theme URI: www.adarna.com.ph
+Description: Adarna House website theme.
+Author: Adarna House, Inc.
+Author URI: www.adarna.com.ph
+Version: 0.91
+Tags:style
+License: N/A
+License URI: N/A
+*/
+
+
+body{
+	background:url(img/bg.jpg);
+	background-repeat: repeat-x;
+	margin:0;
+}
+#header{
+        height:300px; 
+        background:url(img/cloud2.png);
+        width:200px;
+}   	
+p{
+  font-size: 1.0em;
+  text-align: center;
+  margin-top: 1px;
+}
+#headercloud{
+	background:url(img/headercloud.png);
+	width:100%;
+	height:118px;
+	margin:0;
+	z-index:3;
+    position: relative;
+
+}
+#balloonbar{
+	background:url(img/balloonbar.png);
+	background-repeat: no-repeat;
+	width:263px;
+	height:693px;
+	padding-top:320px;
+	position:fixed;
+	margin: -200px 0 0 800px;
+	z-index:1;
+
+}
+#pagewrap{
+	width:1024px;
+	position:relative;
+	margin:0 auto;
+}
+#blogcontent{
+	position:absolute;
+	width:761px;
+	background-color: #f3f8c1;
+	border-top:10px solid #018241;
+	padding: 20px 10px 10px 20px;
+	margin-top:10px;
+
+}
+
+/*#balloonbar{
+	background:url(img/balloonbar.png);
+	background-repeat: no-repeat;
+	width:30%;
+	height:693px;
+	right:0;
+	padding-top:320px;
+	float:right;
+	margin-top: -50px
+}
+#blogcontent{
+	width:60%;
+	position:absolute;
+	margin-left:10%;
+	margin-right:10%;
+	background-color: #f3f8c1;
+	border-top:10px solid #018241;
+}*/
+
+.app-desc{
+	margin:0 auto;
+	width: 223px;
+}
+.app-desc img{
+	margin-left:50px;
+}
+h4{
+	text-align: center;
+	margin-bottom: 5px;
+}
+.bloghr {
+    border-top:3px dotted #62bc60;
+}
+.ballonhr{
+	margin-right:20px;
+	margin-left:20px;	
+	color: rgb(255, 203, 136);
+}
