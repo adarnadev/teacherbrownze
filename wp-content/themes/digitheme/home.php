@@ -5,7 +5,11 @@
 	
 	<div id="blogcontent">
 
-		<p id="blogdetails"> Posted on: <?php the_time('F j, Y'); ?></p>
+		<p id="blogdetails"> Posted on: <?php the_time('F j, Y'); ?>
+
+
+
+		</p>
 		<?php if(have_posts()) : while( have_posts()) : the_post();?>
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
 		<div id="postinfo">
@@ -14,8 +18,8 @@
 		</div>
 
 		<div id="social">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-via="your_screen_name" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
-		<div class="fb-share-button" data-href="<?php the_permalink(); ?>" data-type="box_count"></div>
+		<div><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-counturl="http://groups.google.com/group/twitter-api-announce" data-lang="en" data-count="vertical">Tweet</a></div>
+		<div class="fb-share-button" data-href="<?php the_permalink() ?>" data-type="box_count"></div>
 		</div>
 
 
@@ -91,5 +95,6 @@
 
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 <?php get_footer(); ?>
