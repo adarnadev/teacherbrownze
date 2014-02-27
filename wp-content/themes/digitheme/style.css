@@ -10,7 +10,7 @@ License: N/A
 License URI: N/A
 */
 @media handheld{
-	#balloonbar{display:none;}
+	/*#balloonbar{display:none;}*/
 	#pagewrap{width:90%;}
 }
 h2{
@@ -47,7 +47,7 @@ body{
 	margin:0;
     position: relative;
 }
-#balloonbar{
+/*#balloonbar{
 	background:url(img/balloonbar.png);
 	background-repeat: no-repeat;
 	width:263px;
@@ -56,7 +56,7 @@ body{
 	position:fixed;
 	margin: -200px 0 0 45%;
 	display:none;
-}
+}*/
 #pagewrap{
 	width:50%;
 	position:relative;

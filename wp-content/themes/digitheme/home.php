@@ -63,7 +63,7 @@
 
 
 
-				<div id="balloonbar">
+				<!-- <div id="balloonbar">
 					<h3 style="text-align:center">Adarna Digital Apps!</h3>
 
 
@@ -82,7 +82,7 @@
 							<p> Watch the pages of this award-winning story come to life in a dream-like virtual experience. But that Won't Wake Me Up! is kid-tested and Bilingual (Filipino & English).</p>			
 						</div>
 					</div>
-				</div>
+				</div> -->
 </div>
 <!-- <div class="turnpage">
 	<div class="alignright">
