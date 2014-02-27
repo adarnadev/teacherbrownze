@@ -10,7 +10,8 @@ License: N/A
 License URI: N/A
 */
 @media handheld{
-	#ballonbar{display:none;}
+	#balloonbar{display:none;}
+	#pagewrap{width:90%;}
 }
 h2{
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -54,7 +55,7 @@ body{
 	padding-top:320px;
 	position:fixed;
 	margin: -200px 0 0 45%;
-
+	display:none;
 }
 #pagewrap{
 	width:50%;

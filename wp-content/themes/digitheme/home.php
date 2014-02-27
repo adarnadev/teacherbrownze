@@ -18,7 +18,7 @@
 		</div>
 
 		<div id="social">
-		<div><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-counturl="http://groups.google.com/group/twitter-api-announce" data-lang="en" data-count="vertical">Tweet</a></div>
+		<div><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-counturl="<?php the_permalink() ?>" data-lang="en" data-count="vertical">Tweet</a></div>
 		<div class="fb-share-button" data-href="<?php the_permalink() ?>" data-type="box_count"></div>
 		</div>
 
