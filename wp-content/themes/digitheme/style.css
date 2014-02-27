@@ -24,50 +24,61 @@ body{
 	background:url(img/bg.jpg);
 	background-repeat: repeat-x;
 	margin:0;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 #header{
         height:300px; 
         background:url(img/cloud2.png);
-        width:200px;
+        width:100%;
 }   	
 #headercloud{
 	background:url(img/headercloud.png);
 	width:100%;
 	height:118px;
 	margin:0;
-	z-index:3;
     position: relative;
-
 }
 #balloonbar{
 	background:url(img/balloonbar.png);
 	background-repeat: no-repeat;
 	width:263px;
-	height:693px;
+	height:60%;
 	padding-top:320px;
 	position:fixed;
-	margin: -200px 0 0 800px;
-	z-index:1;
+	margin: -200px 0 0 45%;
 
 }
 #pagewrap{
-	width:1024px;
+	width:50%;
 	position:relative;
 	margin:0 auto;
 }
 #blogcontent{
 	position:absolute;
-	width:761px;
-	background-color: #f3f8c1;
-	border-top:10px solid #018241;
+	width:80%;
+	/*background-color: #f3f8c1;*/
+	/*border-top:10px solid #018241;*/
 	padding: 20px 40px 10px 30px;
-	margin-top:10px;
-
+	margin-top:80px;
 }
 #blogcontent p {
 	line-height:1.5;
 	font-size: 22px;
+}
+#blogcontent #blogdetails{
+	font-size: 20px;
+	font-style: italic;
+}
+
+#blogdetails{
+	position:absolute;
+	padding-right:10px;
+	margin-top:-5px;
+	margin-left: -200px;
+	border-right:1px solid;
+	height:100px;
+	width:160px;
+	text-align: right;
 }
 
 
@@ -114,3 +125,10 @@ h4{
 	text-align: center;
 	font-size: .8em
 }
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}

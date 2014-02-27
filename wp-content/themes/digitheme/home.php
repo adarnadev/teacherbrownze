@@ -1,20 +1,44 @@
 <?php get_header(); ?>
+<img style="display:block;margin-left:auto;margin-right:auto;"src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" />
 <div id="pagewrap">
-	<img src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" />
+	
 	<div id="blogcontent">
+		<p id="blogdetails"> Posted on on: <?php the_time('F j, Y'); ?></p>
 		<?php if(have_posts()) : while( have_posts()) : the_post();?>
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
 		<div id="postinfo">
-		<h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
-		<span>Posted by <?php the_author(); ?>  on: <?php the_time('F j, Y'); ?></span>
+			<h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
+			<span>Posted by <?php the_author(); ?></span>
 		</div>
 
 		<?php the_content(); ?>
 		
-		<br>
-		<p>Categories: <?php the_category(', '); ?> </p>
-		<hr class="bloghr">
-	<?php endwhile;?>
+		<!-- Begin MailChimp Signup Form -->
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		#mc_embed_signup{background:#fff; clear:left;width:400px; margin:0 auto; }
+		
+		#mc-embedded-subscribe{margin:10px auto;}
+		label{text-align: center;}
+		/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+		<div id="mc_embed_signup">
+		<form action="http://adarna.us3.list-manage2.com/subscribe/post?u=52208460643c2b191e0f68272&amp;id=493cffffec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<label for="mce-EMAIL">Join our community!</label>
+			<input style="margin:0 auto;"type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_52208460643c2b191e0f68272_493cffffec" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		</form>
+	</div>
+
+	<!--End mc_embed_signup-->
+
+
+	<p>Categories: <?php the_category(', '); ?> </p>
+	<hr class="bloghr">
+<?php endwhile;?>
 <?php else: ?>
 
 	<p> No posts here ;). </p>
@@ -23,18 +47,18 @@
 </div>
 
 <div id="balloonbar">
-	<h3 style="text-align:center"> Learn about Filipino Language & Culture! Download Now </h3>
+	<h3 style="text-align:center">Our Latest Apps: </h3>
 	<div class="app-desc">
 		<img src="<?php bloginfo('template_directory'); ?>/img/aspicon.png" />
-		<h4> Araw sa Palengke </h4>
-		<p> Experience the sights, smells, and sounds of Araw sa Palengke (A Day in the Market) through this interactive storybook. Kid-tested and Bi-lingual (Filipino & English) </p> 
+		<a href="https://itunes.apple.com/ph/app/a-day-in-the-market/id593049585?mt=8"><h4> Araw sa Palengke </h4></a>
+		<p> Experience the sights, smells, and sounds of A Day in the Market.Kid-tested and Bi-lingual (Filipino & English) </p> 
 
 	</div>
-	<div class="app-desc">
+	<!-- <div class="app-desc">
 		<img src="<?php bloginfo('template_directory'); ?>/img/btwicon.png" />
-		<h4>  But That Won't Wake me Up </h4>
+		<a href="https://itunes.apple.com/ph/app/but-that-wont-wake-me-up!/id704205932?mt=8"><h4>  But That Won't Wake me Up </h4></a>
 		<p> Watch the pages of this award-winning story come to life in a dream-like virtual experience. But that Won't Wake Me Up! is kid-tested and Bilingual (Filipino & English).</p>			
-	</div>
+	</div> -->
 
 </div>
 </div>
