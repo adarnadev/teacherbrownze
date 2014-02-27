@@ -9,9 +9,28 @@ Tags:style
 License: N/A
 License URI: N/A
 */
-@media handheld{
-	/*#balloonbar{display:none;}*/
-	#pagewrap{width:90%;}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    #pagewrap{width:50%;
+    	margin:0 auto;}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    #balloonbar{display:none;}
+    #social{display:none;}
+    #pagewrap{width:100%;}
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	/* phones-portrait */
+    #balloonbar{display:none;}
+    #social{display:none;}
+    #pagewrap{width:100%;}
+
+
+
 }
 h2{
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -33,6 +52,7 @@ body{
 	background:url(img/bg.jpg);
 	background-repeat: repeat-x;
 	margin:0;
+	min-width: 600px;
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 #header{
@@ -47,7 +67,7 @@ body{
 	margin:0;
     position: relative;
 }
-/*#balloonbar{
+#balloonbar{
 	background:url(img/balloonbar.png);
 	background-repeat: no-repeat;
 	width:263px;
@@ -55,12 +75,9 @@ body{
 	padding-top:320px;
 	position:fixed;
 	margin: -200px 0 0 45%;
-	display:none;
-}*/
+}
 #pagewrap{
-	width:50%;
 	position:relative;
-	margin:0 auto;
 }
 #blogcontent{
 	position:absolute;

@@ -28,16 +28,15 @@ var init = setInterval("scrollBg()", scrollSpeed);
 
 $(document).ready(function(){
 
-console.log('hellopakshet');
 
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(100)
+    .fadeOut(1000)
     .next()
-    .fadeIn(100)
+    .fadeIn(1000)
     .end()
     .appendTo('#slideshow');
-},3000);
+},10000);
 });
