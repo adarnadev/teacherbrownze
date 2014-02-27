@@ -14,7 +14,7 @@ function my_jquery_enqueue() {
 }
 
 function theme_js() {
-	wp_enqueue_script('themejs',get_template_directory_uri() . '/js/digital.js');
+	wp_enqueue_script('themejs',get_template_directory_uri() . '/js/digital.js',array('jquery'));
 }
 add_action('wp_enqueue_scripts','theme_js');
 ?>

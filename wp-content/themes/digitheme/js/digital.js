@@ -24,3 +24,20 @@ if (current == restartPosition){
     
 //Calls the scrolling function repeatedly
 var init = setInterval("scrollBg()", scrollSpeed);
+
+
+$(document).ready(function(){
+
+console.log('hellopakshet');
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(100)
+    .next()
+    .fadeIn(100)
+    .end()
+    .appendTo('#slideshow');
+},3000);
+});
