@@ -17,7 +17,10 @@ if (current == restartPosition){
 }
         
     //Set the CSS of the header.
-    $('#headercloud').css("background-position",current+"px 0");
+    $('#topcloud').css("background-position",current+"px 0");
+    $('#botcloud').css("background-position",current+"px 0");
+    $('#bot').css("background-position",current+"px 0");
+
         
         
 }

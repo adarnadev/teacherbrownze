@@ -1,5 +1,18 @@
 <?php get_header(); ?>
-<img style="display:block;margin-left:auto;margin-right:auto;"src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" />
+<body class="blogbg">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=571665306248651";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="topcloud">
+</div>
+
+<a href="<?php bloginfo('url'); ?>"><img style="display:block;margin-left:auto;margin-right:auto;"src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" /></a>
 <div id="pagewrap">
 	
 	
@@ -63,7 +76,7 @@
 
 
 				<div id="balloonbar">
-					<h3 style="text-align:center">Adarna Digital Apps!</h3>
+					<h3>Experience Filipino Stories!</h3>
 
 
 
@@ -72,13 +85,13 @@
 						<div>
 							<a href="https://itunes.apple.com/ph/app/a-day-in-the-market/id593049585?mt=8"><img src="<?php bloginfo('template_directory'); ?>/img/aspicon.png" />
 							<h4> Araw sa Palengke </h4></a>
-							<p> Experience the sights, smells, and sounds of A Day in the Market.Kid-tested and Bi-lingual (Filipino & English) </p> 
+							<p>  Experience the sights, smells, and sounds of A Day in the Market in Filipino & English. </p> 
 						</div>
 
 						<div>
 							<a href="https://itunes.apple.com/ph/app/but-that-wont-wake-me-up!/id704205932?mt=8"><img src="<?php bloginfo('template_directory'); ?>/img/btwicon.png" />
 							<h4>  But That Won't Wake me Up </h4></a>
-							<p> Watch the pages of this award-winning story come to life in a dream-like virtual experience. But that Won't Wake Me Up! is kid-tested and Bilingual (Filipino & English).</p>			
+							<p> Watch the pages of this award-winning story come to life in Filipino & English.</p>			
 						</div>
 						<div>
 							<div class="fb-like-box" data-href="http://www.facebook.com/adarnadigital" data-width="220" data-height="200" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
@@ -97,6 +110,4 @@
 
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
 <?php get_footer(); ?>

@@ -9,7 +9,58 @@ Tags:style
 License: N/A
 License URI: N/A
 */
+.regbg{
+	background-image:linear-gradient(#66ccff , white);
+}
+.texture{
+	background:url(img/texture.png);
+	height:100vh;
+}
 
+nav li{
+	display:inline;
+	list-style:none;
+	padding-right:40px ;
+}
+nav li a{
+	text-decoration: none;
+	color:inherit;
+	color:rgb(102,102,102);
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size:1.4em;
+
+}
+nav li a:hover{
+	color:black;
+}
+nav{
+		margin:0;
+    padding:0;
+    text-align:center;
+    z-index:10;
+    position:relative;
+}
+
+
+.absolutecenter{
+	display:block;
+	margin:auto;
+	position:absolute;
+	top:0;
+	left:0; 
+	bottom:0; 
+	right:0;
+}
+#bot{
+	background:url(img/cloudblue.png);
+	height:169px;
+	width:100%;
+	position:fixed;
+	bottom:0;
+}
+.bottomme{
+	bottom:0;
+}
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
     #pagewrap{width:50%;
@@ -21,6 +72,9 @@ License URI: N/A
     #balloonbar{display:none;}
     #social{display:none;}
     #pagewrap{width:100%;}
+    .absolutecenter{width:70%;}
+    #topcloud{height:10%;}
+    nav{display:none;}
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -28,9 +82,9 @@ License URI: N/A
     #balloonbar{display:none;}
     #social{display:none;}
     #pagewrap{width:100%;}
-
-
-
+    .absolutecenter{width:70%;}
+    #topcloud{height:10%;}
+    nav{display:none;}
 }
 h2{
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -47,10 +101,14 @@ h2{
 	margin-left:-90px;
 	margin-top:70px;
 }
-
-body{
+.blogbg{
 	background:url(img/bg.jpg);
 	background-repeat: repeat-x;
+	height:315px;
+
+}
+
+body{	
 	margin:0;
 	min-width: 600px;
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
@@ -60,12 +118,20 @@ body{
         background:url(img/cloud2.png);
         width:100%;
 }   	
-#headercloud{
-	background:url(img/headercloud.png);
+#topcloud{
 	width:100%;
 	height:118px;
 	margin:0;
-    position: relative;
+    top:0;
+	background:url(img/headercloud.png);
+}
+#botcloud{
+	background:url(img/footercloud.png);
+	width:100%;
+	height:118px;
+	margin:0;
+	position:fixed;
+	bottom:0;
 }
 #balloonbar{
 	background:url(img/balloonbar.png);
@@ -82,8 +148,6 @@ body{
 #blogcontent{
 	position:absolute;
 	width:80%;
-	/*background-color: #f3f8c1;*/
-	/*border-top:10px solid #018241;*/
 	padding: 20px 40px 10px 30px;
 	margin-top:80px;
 }
@@ -107,25 +171,6 @@ body{
 	text-align: right;
 }
 
-
-/*#balloonbar{
-	background:url(img/balloonbar.png);
-	background-repeat: no-repeat;
-	width:30%;
-	height:693px;
-	right:0;
-	padding-top:320px;
-	float:right;
-	margin-top: -50px
-}
-#blogcontent{
-	width:60%;
-	position:absolute;
-	margin-left:10%;
-	margin-right:10%;
-	background-color: #f3f8c1;
-	border-top:10px solid #018241;
-}*/
 #slideshow { 
     margin: 0 auto; 
     position: relative; 
@@ -154,12 +199,16 @@ h4{
 }
 #balloonbar p{
 	text-align: center;
-	font-size: .8em
+	font-size: 1em
 }
 h3{
+	font-size:17px;
 	text-align: center;
-	margin-top:0;
+	margin-top:5px;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+h1{
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
 }
 
 img.alignright {float:right; margin:0 0 1em 1em}
