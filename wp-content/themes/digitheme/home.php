@@ -26,7 +26,7 @@
 		<?php if(have_posts()) : while( have_posts()) : the_post();?>
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
 		<div id="postinfo">
-			<h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
+			<h2><?php the_title(); ?></h2>
 			<span>Posted by <?php the_author(); ?></span>
 		</div>
 
@@ -54,7 +54,7 @@
 									<!--End mc_embed_signup-->
 
 
-									<p>Categories: <?php the_category(', '); ?> </p>
+									<!-- <p>Categories: <?php the_category(', '); ?> </p> -->
 									<hr class="bloghr">
 								<?php endwhile;?>
 							<?php else: ?>
