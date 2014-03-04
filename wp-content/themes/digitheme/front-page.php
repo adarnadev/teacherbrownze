@@ -13,7 +13,8 @@ get_header(); ?>
 
 
 <a href="<?php bloginfo('url'); ?>/blog"><img class="absolutecenter"src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" /></a>
-
+								
+					
 
 
 
