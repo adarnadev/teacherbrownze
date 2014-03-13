@@ -7,4 +7,4 @@
 	<title> <?php bloginfo('name');?> | <?php the_title();?></title>
 	<?php wp_head(); ?>	
 </head>
-<body>
+

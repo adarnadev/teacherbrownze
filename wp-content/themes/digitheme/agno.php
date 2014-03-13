@@ -3,7 +3,7 @@
 Template Name: Agno
 */
 get_header(); ?>
-
+<body>
 <h4 class="niceh"><a href="<?php bloginfo('url') ?>"> back to home page</a> </h4>
 
 <h1 class="niceh"> Hi powz </h1>

@@ -3,6 +3,7 @@
 Template Name: tricks
 */
 get_header() ?>
+<body>
 <h4 class="niceh"><a href="<?php bloginfo('url') ?>"> back to home page</a> </h4>
 <div id="tricky">
 	<h1 class="niceh"> CSS Tricks! </h1>
