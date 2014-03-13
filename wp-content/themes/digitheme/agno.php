@@ -8,8 +8,10 @@ get_header(); ?>
 
 <h1> Hi powz </h1>
 
-<div style="border:1px solid red;">
-	<p>Welcome to our website teacher franz. Have fun.</p>
+<div>
+	<p style="border:1px solid red;">Welcome to our website teacher franz. Have fun.</p>
+	<img src="<?php bloginfo('template_directory'); ?>/img/train.jpg">hello </img>
+	<marquee style="color:blue"> hahahahaha </marquee>
 </div>
 
 <?php get_footer();?>
