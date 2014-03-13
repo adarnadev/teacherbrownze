@@ -7,6 +7,7 @@
 	<ul>
 		<li><a href="<?php bloginfo('url') ?>/agno">From Agno</li>
 		<li><a href="<?php bloginfo('url') ?>/pepeandam">From Pepe and AM</li>
+		<li><a href="<?php bloginfo('url') ?>/diegohi">From Diego</li>
 		<li><a href="<?php bloginfo('url') ?>/tricks">CSS Tricks!!</li>
 
 	</ul>
