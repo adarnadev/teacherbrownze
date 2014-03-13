@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: pepe
+Template Name: diego
 */
 get_header(); ?>
 <body style="text-align:left;">
