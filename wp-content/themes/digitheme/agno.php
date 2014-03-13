@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div>
 	<p class="nicep" style="border:1px solid red;">Welcome to our website teacher franz. Have fun.</p>
-	<img src="<?php bloginfo('template_directory'); ?>/img/train.jpg">hello </img>
+	<img src="<?php bloginfo('template_directory'); ?>/img/train.jpg" />
 	<marquee class="nicep" style="color:blue"> hahahahaha </marquee>
 </div>
 
