@@ -9,18 +9,23 @@ Tags:style
 License: N/A
 License URI: N/A
 */
-.regbg{
-	background-image:linear-gradient(#66ccff , white);
+.nicep{
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size:22px;
 }
-.texture{
-	background:url(img/texture.png);
-	height:100vh;
+.niceh{
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-
-nav li{
-	display:inline;
-	list-style:none;
-	padding-right:40px ;
+}
+nav li a:hover{
+	color:black;
+}
+nav{
+	margin:0;
+    padding:0;
+    text-align:center;
+    z-index:10;
+    position:relative;
 }
 nav li a{
 	text-decoration: none;
@@ -30,194 +35,3 @@ nav li a{
 	font-size:1.6em;
 
 }
-nav li a:hover{
-	color:black;
-}
-nav{
-		margin:0;
-    padding:0;
-    text-align:center;
-    z-index:10;
-    position:relative;
-}
-
-
-.absolutecenter{
-	display:block;
-	margin:auto;
-	position:absolute;
-	top:0;
-	left:0; 
-	bottom:0; 
-	right:0;
-}
-#bot{
-	background:url(img/cloudblue.png);
-	height:169px;
-	width:100%;
-	position:absolute;
-	bottom:0;
-}
-.bottomme{
-	bottom:0;
-}
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
-    #pagewrap{width:50%;
-    	margin:0 auto;}
-}
-
-@media only screen and (max-width: 767px) {
-    /* phones */
-    #balloonbar{display:none;}
-    #social{display:none;}
-    #pagewrap{width:100%;}
-    .absolutecenter{width:70%;}
-    #topcloud{height:10%;}
-    nav{display:none;}
-}
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-	/* phones-portrait */
-    #balloonbar{display:none;}
-    #social{display:none;}
-    #pagewrap{width:100%;}
-    .absolutecenter{width:70%;}
-    #topcloud{height:10%;}
-    nav{display:none;}
-}
-h2{
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-	margin:0;
-	color:black;
-}
-#postinfo{
-	display:inline;
-	position:inherit;
-	margin-left: 10px;
-}
-#social{
-	position:absolute;
-	margin-left:-90px;
-	margin-top:70px;
-}
-.blogbg{
-	background:url(img/bg.jpg);
-	background-repeat: repeat-x;
-	height:315px;
-
-}
-
-body{	
-	margin:0;
-	min-width: 600px;
-	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-}
-#header{
-        height:300px; 
-        background:url(img/cloud2.png);
-        width:100%;
-}   	
-#topcloud{
-	width:100%;
-	height:118px;
-	margin:0;
-    top:0;
-	background:url(img/headercloud.png);
-}
-#botcloud{
-	background:url(img/footercloud.png);
-	width:100%;
-	height:118px;
-	margin:0;
-	bottom:0;
-}
-#balloonbar{
-	background:url(img/balloonbar.png);
-	background-repeat: no-repeat;
-	width:263px;
-	height:60%;
-	padding-top:320px;
-	position:fixed;
-	margin: -200px 0 0 45%;
-}
-#pagewrap{
-	position:relative;
-}
-#blogcontent{
-	position:absolute;
-	width:80%;
-	padding: 20px 40px 10px 30px;
-	margin-top:80px;
-}
-p{
-	line-height:1.5;
-	font-size: 22px;
-}
-.wp-caption p{
-	font-size:15px;
-	font-style: italic;
-}
-
-#blogcontent #blogdetails{
-	font-size: 20px;
-	font-style: italic;
-}
-
-#blogdetails{
-	position:absolute;
-	padding-right:10px;
-	margin-top:-5px;
-	margin-left: -200px;
-	border-right:1px solid;
-	height:100px;
-	width:160px;
-	text-align: right;
-}
-
-#slideshow { 
-    margin: 0 auto; 
-    position: relative; 
-    width: 223px; 
-   	
-}
-#slideshow img{
-	display:block;
-	margin:0 auto;
-}
-#slideshow > div { 
-    position: absolute; 
-}
-h4{
-	text-align: center;
-	margin-bottom: 5px;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
-.bloghr {
-    border-top:3px dotted #62bc60;
-}
-.ballonhr{
-	margin-right:20px;
-	margin-left:20px;	
-	color: rgb(255, 203, 136);
-}
-#balloonbar p{
-	text-align: center;
-	font-size: 1em
-}
-h3{
-	font-size:17px;
-	text-align: center;
-	margin-top:5px;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
-h1{
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;	
-}
-
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin:0 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
