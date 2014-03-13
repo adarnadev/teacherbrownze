@@ -18,13 +18,11 @@
 	
 	<div id="blogcontent">
 
-		<p id="blogdetails"> Posted on: <?php the_time('F j, Y'); ?>
-
-
-
-		</p>
 		<?php if(have_posts()) : while( have_posts()) : the_post();?>
+		<p id="blogdetails"> Posted on: <?php the_time('F j, Y'); ?></p>
+		
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
+		
 		<div id="postinfo">
 			<h2><?php the_title(); ?></h2>
 			<span>Posted by <?php the_author(); ?></span>

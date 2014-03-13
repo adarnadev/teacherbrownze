@@ -1,27 +1,13 @@
-<?php
-/*
-Template Name: Trial
-*/
-get_header(); ?>
-<body class="regbg">
-<div class="texture">
-	<div id="topcloud">
-	</div>
+<?php get_header(); ?>
+
+<h1> Welcome Teacher Franz! </h1>
+
+<nav> 
+	<h3>Check out what everyone made for you:</h3> 
+	<ul>
+		<li><a href="<?php bloginfo('url') ?>/agno">From Agno</li>
+	</ul>
+</nav>
 
 
-
-
-
-<a href="<?php bloginfo('url'); ?>/blog"><img class="absolutecenter"src="<?php bloginfo('template_directory'); ?>/img/ahdigitallogo.png" /></a>
-								
-					
-
-
-
-	<div id="bot">
-		<?php get_template_part(nav,menu); ?> 
-		<div id="botcloud">
-		</div>
-	</div>
-</div>
 <?php get_footer();?>
