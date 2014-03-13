@@ -3,6 +3,7 @@
 Template Name: tricks
 */
 get_header() ?>
+<h4 class="niceh"><a href="<?php bloginfo('url') ?>"> back to home page</a> </h4>
 <div id="tricky">
 	<h1 class="niceh"> CSS Tricks! </h1>
 
@@ -10,13 +11,13 @@ get_header() ?>
 	<p>
 		Add images! <br>
 		Use this syntax:<br>
-		&gt;img src="img/imagename.jpg" &lt;<br>
+		&lt;img src="img/imagename.jpg" &gt;<br>
 
 	 </p>
 	<h4 class="niceh"> Examples: </h4>
 
 	<p> if I type this: <br>
-		&gt;img src="img/burger.jpg" &lt;
+		&lt;img src="img/burger.jpg" &gt;
 		i get this:
 	</p>
 	<img src="<?php bloginfo('template_directory'); ?>/img/burger.jpg" />
@@ -76,7 +77,7 @@ get_header() ?>
 		style="font-size:50px;"
 		i get this:
 	</p>
-	<p style="color:rgb(120,50,30);"> HUGE!</p>
+	<p style="font-size:50px;"> HUGE!</p>
 
 </div>
 
