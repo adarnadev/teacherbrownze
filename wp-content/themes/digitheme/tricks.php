@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Agno
+Template Name: tricks
 */
 get_header() ?>
 <h1 class="niceh"> CSS Tricks! </h1>
